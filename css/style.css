@@ -301,6 +301,137 @@ input[type="radio"].visually-hidden {
     width: 210px;
 }
 
+/* update */
+.update {
+    width: 100%;
+}
+
+.update__wrapper {
+    box-sizing: border-box;
+    width: 320px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.update__headline {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+.update__subtitle {
+    line-height: 1.67;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* pricing */
+.pricing {
+    width: 100%;
+}
+
+.pricing__wrapper {
+    box-sizing: border-box;
+    width: 320px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing__header {
+    line-height: 1.67;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.pricing__headline {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+.pricing__subtitle {
+    line-height: 1.67;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.pricing__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* our-users */
+.our-users {
+    width: 100%;
+}
+
+.our-users__wrapper {
+    box-sizing: border-box;
+    width: 330px;
+    margin: 0 auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our-users__big-text {
+    font-size: 26px;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.our-users__text {
+    font-size: 16px;
+    line-height: 1.75;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 33px;
+}
+
+.our-users__visual-image {
+    padding: 0;
+    margin: 0;
+    min-width: 300px;
+    min-height: 265px;
+}
+
+.our-users__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+
+}
+
+.our-users__button {
+    align-self: flex-start;
+}
 
 
 /* Media выражения */
@@ -514,14 +645,108 @@ input[type="radio"].visually-hidden {
         }
     }
 
+    /* media update */
+    @media (min-width:760px) {
+        .update__wrapper {
+            width: 760px;
+        }
 
+        .update__subtitle {
+            font-size: 24px;
+        }
+    }
 
+    @media (min-width:1200px) {
+        .update__wrapper {
+            width: 1180px;
+        }
+    }
 
+    /* media pricing */
+    @media (min-width:760px) {
+        .pricing__wrapper {
+            width: 760px;
+        }
 
+        .pricing__list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
 
+        .pricing__item {
+            width: 325px;
+        }
 
+        .pricing__subtitle {
+            font-size: 24px;
+        }
+    }
 
+    @media (min-width:1200px) {
+        .pricing__wrapper {
+            width: 1180px;
+        }
 
+        .pricing__list {
+            width: 100%;
+        }
+    }
+
+    /* media our-users */
+    @media (min-width:760px) {
+        .our-users__wrapper {
+            box-sizing: border-box;
+            width: 760px;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .our-users__visual-image {
+            width: 295px;
+            height: 260px;
+        }
+
+        .our-users__text-wrapper {
+            width: 400px;
+            box-sizing: border-box;
+        }
+
+        .our-users__big-text {
+            font-size: 30px;
+        }
+
+    }
+
+    @media (min-width:1200px) {
+        .our-users__wrapper {
+            width: 1180px;
+        }
+
+        .our-users__visual {
+            box-sizing: border-box;
+            width: 660px;
+            padding: 0 10px;
+        }
+
+        .our-users__visual-image {
+            width: 560px;
+            height: 495px;
+        }
+
+        .our-users__text-wrapper {
+            width: 478px;
+            box-sizing: border-box;
+            padding: 0 10px;
+        }
+
+        .our-users__big-text {
+            font-size: 48px;
+        }
+
+    }
 
 
     /* .top-menu__item {
