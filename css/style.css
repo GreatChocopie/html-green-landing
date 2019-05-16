@@ -31,7 +31,7 @@ body {
     margin: 0;
     padding: 0;
     color: rgb(255, 255, 255);
-    background: rgb(51, 51, 51);
+    background: var(--color-green1);
 }
 
 a {
@@ -62,7 +62,7 @@ input[type="radio"].visually-hidden {
 
 .header {
     width: 100%;
-    background-color: #000000;
+    background-color: var(--color-green2);
 }
 
 .top-menu {
@@ -94,10 +94,18 @@ input[type="radio"].visually-hidden {
     padding: 5px 18px;
 }
 
+.top-menu__item-a {
+    color: var(--color-grey0);
+}
+
+
 .top-menu__button-start {
     font-size: 13px;
+    font-weight: 500;
     text-transform: uppercase;
     color: var(--color-grey100);
+    height: 40px;
+    box-sizing: border-box;
     padding: 8px 20px;
     background-color: var(--color-yellow);
     border-radius: 4px;
@@ -635,6 +643,25 @@ input[type="radio"].visually-hidden {
 
         .top-menu__item {
             align-self: baseline;
+        }
+
+        .top-menu__item-a--current {
+            color: var(--color-yellow);
+        }
+
+        .top-menu__item-a:hover,
+        .top-menu__item-a:focus {
+            color: var(--color-yellow);
+
+        }
+
+        .top-menu__button-start {
+            cursor: pointer;
+        }
+
+        .top-menu__button-start:hover,
+        .top-menu__button-start:focus {
+            box-shadow: 0px 8px 20px 3px rgba(237, 205, 55, 0.5);
         }
     }
 
