@@ -551,6 +551,10 @@ input[type="radio"].visually-hidden {
 }
 
 /* footer */
+.footer {
+    background-color: var(--color-grey0);
+    color: #000000;
+}
 
 .footer-nav {
     box-sizing: border-box;
@@ -567,7 +571,7 @@ input[type="radio"].visually-hidden {
 .footer-nav__contacts {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin-bottom: 30px;
 }
 
 .footer-nav__navigation {
@@ -576,6 +580,49 @@ input[type="radio"].visually-hidden {
     margin: 0;
 }
 
+.footer-nav__logo-image {
+    width: 130px;
+    height: 33px;
+}
+
+.footer-nav__logo {
+    display: block;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.footer-nav__e-mail {
+    padding: 0;
+    margin: 10px 0;
+}
+
+.footer-nav__namber {
+    padding: 0;
+    margin: 10px 0;
+}
+
+.footer-nav__column {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-nav__column-headline {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 16px;
+
+}
+
+.footer-nav__column-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
 
 
 /* Media выражения */
