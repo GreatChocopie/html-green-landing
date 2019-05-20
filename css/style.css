@@ -554,14 +554,17 @@ input[type="radio"].visually-hidden {
 .footer {
     background-color: var(--color-grey0);
     color: #000000;
+     padding-top: 30px;
+     padding-bottom: 60px;
+    
 }
 
 .footer-nav {
     box-sizing: border-box;
     width: 320px;
     margin: 0 auto;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     display: flex;
     flex-direction: column;
 
@@ -571,6 +574,7 @@ input[type="radio"].visually-hidden {
     list-style: none;
     padding: 0;
     margin-bottom: 30px;
+    color: rgb(15, 33, 55);
 }
 
 .footer-nav__navigation {
@@ -613,6 +617,8 @@ input[type="radio"].visually-hidden {
     margin: 0;
     margin-bottom: 30px;
     font-size: 16px;
+    color: rgb(52, 61, 72);
+    font-weight: 700;
 
 }
 
@@ -1067,11 +1073,14 @@ input[type="radio"].visually-hidden {
             flex-wrap: wrap;
             justify-content: space-between;
         }
+        .footer-nav__column {
+            width: 204px;
+        }
     }
 
     @media (min-width:1200px) {
         .footer-nav {
-            width: 1180px;
+            width: 1140px;
         }
 
         .footer-nav__contacts {
@@ -1081,6 +1090,10 @@ input[type="radio"].visually-hidden {
         .footer-nav__navigation {
             width: 878px;
 
+        }
+        .footer-nav__column-item:hover,
+        .footer-nav__column-item:focus {
+            color: rgb(52, 61, 72);
         }
 
 
