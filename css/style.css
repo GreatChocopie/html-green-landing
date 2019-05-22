@@ -520,13 +520,14 @@ input[type="radio"].visually-hidden {
 /* start-trial */
 .start-trial {
     width: 100%;
+    background-color: var(--color-grey0);
+    color: rgb(0, 0, 0);
 }
 
 .start-trial__wrapper {
     box-sizing: border-box;
     width: 320px;
     margin: 0 auto;
-    margin-bottom: 30px;
     padding-left: 5px;
     padding-right: 5px;
     display: flex;
@@ -536,7 +537,6 @@ input[type="radio"].visually-hidden {
 
 .start-trial__big-text {
     padding: 0;
-    padding-top: 200px;
     margin: 0px 0px 25px;
     font-size: 28px;
     text-align: center;
@@ -550,13 +550,64 @@ input[type="radio"].visually-hidden {
 
 }
 
+.start-trial__visual {
+    width: 320px;
+    padding: 0;
+    margin-bottom: 35px;
+    box-sizing: border-box;
+}
+
+.start-trail__img {
+    box-sizing: border-box;
+    margin: 0 58px;
+}
+
+.start-trial__buttons-block {
+    width: 320px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.start-trial__button-join {
+    cursor: pointer;
+    min-height: 46px;
+    padding: 8px 15px;
+    box-sizing: border-box;
+    min-width: 150px;
+
+
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    background-color: rgb(237, 205, 55);
+    font-size: 13px;
+    border-radius: 3px;
+    border-color: rgb(237, 205, 55);
+}
+
+.start-trial__button {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    font-size: 13px;
+    cursor: pointer;
+    min-height: 46px;
+    padding: 8px 15px;
+    box-sizing: border-box;
+    min-width: 150px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+
 /* footer */
 .footer {
     background-color: var(--color-grey0);
+    background: linear-gradient(rgb(255, 255, 255) 0%, rgb(252, 252, 253) 5%, rgb(252, 252, 253) 100%);
     color: #000000;
-     padding-top: 30px;
-     padding-bottom: 60px;
-    
+    padding-top: 30px;
+    padding-bottom: 60px;
+
 }
 
 .footer-nav {
@@ -630,7 +681,7 @@ input[type="radio"].visually-hidden {
 
 .footer-nav__column-item {
     display: block;
-    margin:0;
+    margin: 0;
     padding: 10px 0;
     color: rgba(52, 61, 72, 0.8);
     font-size: 14px;
@@ -1029,7 +1080,6 @@ input[type="radio"].visually-hidden {
 
         .start-trial__buttons-block {
             width: 550px;
-            display: flex;
             justify-content: center;
         }
     }
@@ -1049,16 +1099,48 @@ input[type="radio"].visually-hidden {
             font-size: 16px;
         }
 
-        .start-trial__buttons-block {
-            width: 477px;
-            display: flex;
+        .start-trial__buttons-block {}
+
+        .start-trial__button-join:hover,
+        .start-trial__button-join:focus {
+            box-shadow: 0px 8px 20px 3px rgba(237, 205, 55, 0.5);
+        }
+
+        .start-trial__button:hover,
+        .start-trial__button:focus {
+            color: var(--color-yellow);
         }
 
     }
 
     /* media footer */
     @media (min-width:760px) {
+        .footer {
+            position: relative;
+            padding-top: 150px;
+        }
+
+        /* .footer::before {
+            content: "";
+            position: absolute;
+            box-sizing: border-box;
+            width: 100%;
+            padding-bottom: 100%;
+            border-top-right-radius: 11%;
+            top: 18%;
+            left: 0px;
+            pointer-events: none;
+            background-color: rgb(255, 255, 255);
+            transform: rotate(-6deg);
+        } */
+
         .footer-nav {
+            padding-top: 80px;
+            padding-bottom: 80px;
+            position: relative;
+            background-repeat: no-repeat;
+            background-position: center 50px;
+            background-image: url(../img/footer-bg.png);
             width: 760px;
             flex-direction: row;
         }
@@ -1073,12 +1155,14 @@ input[type="radio"].visually-hidden {
             flex-wrap: wrap;
             justify-content: space-between;
         }
+
         .footer-nav__column {
             width: 204px;
         }
     }
 
     @media (min-width:1200px) {
+
         .footer-nav {
             width: 1140px;
         }
@@ -1091,6 +1175,7 @@ input[type="radio"].visually-hidden {
             width: 878px;
 
         }
+
         .footer-nav__column-item:hover,
         .footer-nav__column-item:focus {
             color: rgb(52, 61, 72);
