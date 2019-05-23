@@ -185,6 +185,7 @@ input[type="radio"].visually-hidden {
 /* process */
 .process {
     width: 100%;
+    background-color: rgb(255, 255, 255);
 }
 
 .process__wrapper {
@@ -205,20 +206,26 @@ input[type="radio"].visually-hidden {
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 
 }
 
 .process__headline {
     font-size: 14px;
+    text-transform: uppercase;
+    color: rgb(42, 162, 117);
+    font-weight: 700;
     padding: 0;
     margin: 0;
+
 }
 
 .process__subtitle {
     line-height: 1.67;
     font-weight: 500;
     font-size: 20px;
+    color: rgb(15, 33, 55);
+    font-weight: 500;
     text-align: center;
     padding: 0;
     margin: 0;
@@ -231,12 +238,82 @@ input[type="radio"].visually-hidden {
     margin-bottom: 60px;
 }
 
-/* здесь будут элементы списка */
+.process__item {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.process__step-visual {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 35px;
+}
+
+.process__step-namber {
+    position: absolute;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    top: -13px;
+    left: -13px;
+    z-index: 1;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    font-size: 20px;
+    color: rgb(52, 61, 72);
+    font-weight: 700;
+    box-shadow: rgba(42, 96, 151, 0.25) 0px 6px 10.34px 0.66px;
+}
+
+.process__step-img {
+    width: 60px;
+    height: 60px;
+}
+
+.process__step-text {
+    color: rgb(52, 61, 72);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.87;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.process__step {
+    color: rgb(15, 33, 55);
+    font-weight: 400;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.process__promo {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 60px;
+}
+.process__promo-text {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
 .process__big-text {
     font-size: 26px;
     margin: 0;
     margin-bottom: 20px;
     padding: 0;
+    color: rgb(15, 33, 55);
+    font-weight: 400;
+    line-height: 1.25;
 }
 
 .process__text {
@@ -245,14 +322,27 @@ input[type="radio"].visually-hidden {
     padding: 0;
     margin: 0;
     margin-bottom: 33px;
+    color: rgba(52, 61, 72, 0.8);
+    line-height: 2;
+}
+.process__button {
+    align-self: flex-start;
+    cursor: pointer;
+    padding: 8px 22px;
+    box-sizing: border-box;
+    min-width: 150px;
+    min-height: 46px;
+
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    background-color: rgb(237, 205, 55);
+    font-size: 14px;
+    border-radius: 4px;
+    border-color: rgb(237, 205, 55);
+    transition: all 0.3s ease 0s;
 }
 
-.process__promo-text {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-}
 
 /* features */
 
@@ -859,6 +949,9 @@ input[type="radio"].visually-hidden {
         .process__wrapper {
             width: 760px;
         }
+        .process__header {
+            margin-bottom: 100px;
+        }
 
         .process__subtitle {
             font-size: 24px;
@@ -873,11 +966,17 @@ input[type="radio"].visually-hidden {
             display: flex;
             justify-content: space-between;
         }
+        .process__item {
+            width: 225px;
+            padding: 0 10px;
+        }
+        .process__step-img {
+            width: 70px;
+            height: 70px;
+        }
 
         .process__promo {
             width: 730px;
-            margin: 0;
-            padding: 0;
             display: flex;
             justify-content: space-between;
         }
@@ -900,6 +999,18 @@ input[type="radio"].visually-hidden {
         .process__list {
             width: 100%;
         }
+        .process__item {
+            width:400px;
+            padding: 0 40px;
+        }
+        .process__step-img {
+            width: 87px;
+            height: 87px;
+        }
+        .process__step-namber {
+            width: 45px;
+            height:45px;
+        }
 
         .process__promo {
             width: 100%;
@@ -915,6 +1026,10 @@ input[type="radio"].visually-hidden {
 
         .process__text {
             font-size: 16px;
+        }
+        .process__button:hover,
+        .process__button:focus {
+            box-shadow: 0px 8px 20px 3px rgba(237, 205, 55, 0.5);
         }
 
     }
