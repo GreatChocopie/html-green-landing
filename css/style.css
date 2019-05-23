@@ -43,6 +43,15 @@ img {
     height: auto;
 }
 
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -57,6 +66,8 @@ input[type="radio"].visually-hidden {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
+
 
 /*Блок Хедер */
 
@@ -110,7 +121,6 @@ input[type="radio"].visually-hidden {
     background-color: var(--color-yellow);
     border-radius: 4px;
     border: none;
-    outline: 0;
 }
 
 
@@ -393,6 +403,11 @@ input[type="radio"].visually-hidden {
 /* our-users */
 .our-users {
     width: 100%;
+    background-color: rgb(246, 251, 249);
+    background-image: url(../img/map.png);
+    background-repeat: no-repeat;
+    background-position: 25% center;
+
 }
 
 .our-users__wrapper {
@@ -403,9 +418,11 @@ input[type="radio"].visually-hidden {
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 30px;
+    padding-bottom: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 .our-users__big-text {
@@ -413,6 +430,9 @@ input[type="radio"].visually-hidden {
     margin: 0;
     margin-bottom: 20px;
     padding: 0;
+    color: rgb(15, 33, 55);
+    font-weight: 400;
+    line-height: 1.25;
 }
 
 .our-users__text {
@@ -421,6 +441,8 @@ input[type="radio"].visually-hidden {
     padding: 0;
     margin: 0;
     margin-bottom: 33px;
+    color: rgba(52, 61, 72, 0.8);
+
 }
 
 .our-users__visual-image {
@@ -440,6 +462,20 @@ input[type="radio"].visually-hidden {
 
 .our-users__button {
     align-self: flex-start;
+    cursor: pointer;
+    padding: 8px 22px;
+    box-sizing: border-box;
+    min-width: 150px;
+    min-height: 46px;
+
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    background-color: rgb(237, 205, 55);
+    font-size: 14px;
+    border-radius: 4px;
+    border-color: rgb(237, 205, 55);
+    transition: all 0.3s ease 0s;
 }
 
 /* testimonial */
@@ -972,7 +1008,7 @@ input[type="radio"].visually-hidden {
         .our-users__wrapper {
             box-sizing: border-box;
             width: 760px;
-            padding: 0 20px;
+            padding: 100px 20px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -1018,6 +1054,11 @@ input[type="radio"].visually-hidden {
 
         .our-users__big-text {
             font-size: 48px;
+        }
+
+        .our-users__button:hover,
+        .our-users__button:focus {
+            box-shadow: 0px 8px 20px 3px rgba(237, 205, 55, 0.5);
         }
 
     }
