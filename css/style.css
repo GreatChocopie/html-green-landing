@@ -142,15 +142,35 @@ input[type="radio"].visually-hidden {
 }
 
 .intro__hint {
-    width: 280px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    width: 265px;
     box-sizing: border-box;
-    padding: 7px 10px;
+    text-align: center;
+    padding: 10px 5px;
     margin: 0px 0px 25px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.intro__hint-save {
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 13px;
+    color: rgb(0, 134, 91);
+    font-weight: 700;
+
 }
 
 .intro__big-text {
     padding: 0;
     margin: 0px 0px 25px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: -0.040em;
     font-size: 24px;
     text-align: center;
 }
@@ -169,6 +189,23 @@ input[type="radio"].visually-hidden {
     justify-content: space-between;
     margin-bottom: 35px;
 }
+
+.intro__button-trial {
+    height: 40px;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: rgb(237, 205, 55);
+    border-color: rgb(237, 205, 55);
+    border-radius: 4px;
+    transition: all 0.3s ease 0s;
+}
+
+.intro__button-watch-video {}
 
 .intro__visual {
     width: 100%;
@@ -294,11 +331,13 @@ input[type="radio"].visually-hidden {
     margin: 0;
     margin-bottom: 20px;
 }
+
 .process__promo {
     padding: 0;
     margin: 0;
     margin-bottom: 60px;
 }
+
 .process__promo-text {
     display: flex;
     flex-direction: column;
@@ -325,6 +364,7 @@ input[type="radio"].visually-hidden {
     color: rgba(52, 61, 72, 0.8);
     line-height: 2;
 }
+
 .process__button {
     align-self: flex-start;
     cursor: pointer;
@@ -924,6 +964,10 @@ input[type="radio"].visually-hidden {
         .intro__text {
             width: 552px;
         }
+
+        .intro__button-trial {
+            padding: 8px 22px;
+        }
     }
 
     @media (min-width:1200px) {
@@ -933,12 +977,17 @@ input[type="radio"].visually-hidden {
 
         .intro__big-text {
             padding: 0;
-            width: 630px;
+            width: 580px;
             font-size: 46px;
         }
 
         .intro__text {
             width: 555px;
+        }
+
+        .intro__button-trial {
+            font-size: 14px;
+            padding: 8px 28px;
         }
 
     }
@@ -949,6 +998,7 @@ input[type="radio"].visually-hidden {
         .process__wrapper {
             width: 760px;
         }
+
         .process__header {
             margin-bottom: 100px;
         }
@@ -966,10 +1016,12 @@ input[type="radio"].visually-hidden {
             display: flex;
             justify-content: space-between;
         }
+
         .process__item {
             width: 225px;
             padding: 0 10px;
         }
+
         .process__step-img {
             width: 70px;
             height: 70px;
@@ -999,17 +1051,20 @@ input[type="radio"].visually-hidden {
         .process__list {
             width: 100%;
         }
+
         .process__item {
-            width:400px;
+            width: 400px;
             padding: 0 40px;
         }
+
         .process__step-img {
             width: 87px;
             height: 87px;
         }
+
         .process__step-namber {
             width: 45px;
-            height:45px;
+            height: 45px;
         }
 
         .process__promo {
@@ -1027,6 +1082,7 @@ input[type="radio"].visually-hidden {
         .process__text {
             font-size: 16px;
         }
+
         .process__button:hover,
         .process__button:focus {
             box-shadow: 0px 8px 20px 3px rgba(237, 205, 55, 0.5);
