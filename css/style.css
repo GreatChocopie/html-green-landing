@@ -451,12 +451,77 @@ input[type="radio"].visually-hidden {
     justify-content: flex-end;
 }
 
-/* .features__item::before {
+.feature__advantage-wrapper-1::before {
     content: "";
     position: absolute;
-    background-image: url(../img/)
-} */
+    width: 70px;
+    height: 70px;
+    top: 15px;
+    left: 15px;
+    background-image: url(../img/app.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
 
+.feature__advantage-wrapper-2::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 15px;
+    left: 15px;
+    background-image: url(../img/award.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.feature__advantage-wrapper-3::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 15px;
+    left: 15px;
+    background-image: url(../img/storage.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.feature__advantage-wrapper-4::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 15px;
+    left: 15px;
+    background-image: url(../img/custom.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.feature__advantage-wrapper-5::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 15px;
+    left: 15px;
+    background-image: url(../img/ux.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.feature__advantage-wrapper-6::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 15px;
+    left: 15px;
+    background-image: url(../img/customer.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
 
 .feature__advantage-wrapper {
     padding: 0;
