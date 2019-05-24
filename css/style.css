@@ -182,17 +182,18 @@ input[type="radio"].visually-hidden {
 }
 
 .intro__buttons-block {
-    width: 270px;
+    width: 320px;
     box-sizing: border-box;
     padding: 0px 15px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 35px;
 }
 
 .intro__button-trial {
     height: 40px;
     padding: 0px 15px;
+    margin-right: 30px;
     box-sizing: border-box;
     font-weight: 500;
     font-size: 13px;
@@ -214,7 +215,7 @@ input[type="radio"].visually-hidden {
 }
 
 .intro__visual-image {
-    min-width: 250px;
+    min-width: 270px;
     min-height: 160px;
 
 }
@@ -232,6 +233,7 @@ input[type="radio"].visually-hidden {
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 30px;
+    padding-bottom: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -388,6 +390,7 @@ input[type="radio"].visually-hidden {
 
 .features {
     width: 100%;
+    background-color: rgb(255, 255, 255);
 }
 
 .features__wrapper {
@@ -408,13 +411,16 @@ input[type="radio"].visually-hidden {
     align-items: center;
     padding: 0;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 .features__headline {
     font-size: 14px;
     padding: 0;
     margin: 0;
+    text-transform: uppercase;
+    color: rgb(42, 162, 117);
+    font-weight: 700;
 }
 
 .features__subtitle {
@@ -424,6 +430,7 @@ input[type="radio"].visually-hidden {
     text-align: center;
     padding: 0;
     margin: 0;
+    color: rgb(15, 33, 55);
 }
 
 .features__list {
@@ -435,18 +442,46 @@ input[type="radio"].visually-hidden {
 }
 
 .features__item {
+    position: relative;
     width: 100%;
     padding: 0;
     margin: 0;
+    margin-bottom: 30px;
     display: flex;
-
+    justify-content: flex-end;
 }
+
+/* .features__item::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/)
+} */
+
 
 .feature__advantage-wrapper {
     padding: 0;
     margin: 0;
     margin-left: auto;
     width: 210px;
+}
+
+.feature__advantage {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: rgb(15, 33, 55);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.feature__advantage-text {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    color: rgb(93, 100, 109);
+    font-weight: 400;
+    line-height: 1.88;
 }
 
 /* update */
@@ -966,7 +1001,8 @@ input[type="radio"].visually-hidden {
         }
 
         .intro__button-trial {
-            padding: 8px 22px;
+            font-size: 14px;
+            padding: 8px 30px;
         }
     }
 
@@ -985,9 +1021,10 @@ input[type="radio"].visually-hidden {
             width: 555px;
         }
 
-        .intro__button-trial {
-            font-size: 14px;
-            padding: 8px 28px;
+
+        .intro__button-trial:hover,
+        .intro__button-trial:focus {
+            box-shadow: 0px 8px 20px 3px rgba(237, 205, 55, 0.5);
         }
 
     }
