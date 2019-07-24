@@ -212,11 +212,16 @@ input[type="radio"].visually-hidden {
     width: 154px;
 }
 
+
 .intro__button-video-icon {
-    fill: rgb(255,255,255);
+    fill: rgb(255, 255, 255);
     width: 30px;
     height: 30px;
     margin-right: 5px;
+}
+
+.intro__button-video-icon:hover {
+    fill: rgb(237, 205, 55);
 }
 
 .intro__button-video-text {
@@ -224,6 +229,10 @@ input[type="radio"].visually-hidden {
     font-size: 13px;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
+}
+
+.intro__button-video-text:hover {
+    color: rgb(237, 205, 55);
 }
 
 .intro__visual {
@@ -256,6 +265,7 @@ input[type="radio"].visually-hidden {
     flex-direction: column;
     align-items: center;
 }
+
 
 .process__header {
     line-height: 1.67;
@@ -359,10 +369,16 @@ input[type="radio"].visually-hidden {
 }
 
 .process__promo-text {
+    box-sizing: border-box;
+    width: 320px;
+    margin: 0 auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     display: flex;
     flex-direction: column;
-    padding: 0;
-    margin: 0;
+    align-items: center;
 }
 
 .process__big-text {
@@ -401,6 +417,22 @@ input[type="radio"].visually-hidden {
     border-radius: 4px;
     border-color: rgb(237, 205, 55);
     transition: all 0.3s ease 0s;
+}
+
+.process__visual {
+
+    background-image: url(../img/dash-bg.png);
+    background-size: contain;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+
+}
+
+.process__visual-image1 {
+
+    min-width: 320px;
+    min-height: 328px;
+
 }
 
 
@@ -1185,6 +1217,7 @@ input[type="radio"].visually-hidden {
         .intro__button-trial:focus {
             box-shadow: 0px 8px 20px 3px rgba(237, 205, 55, 0.5);
         }
+
         /* .intro__button-video-text:hover {
             color: rgb(237, 205, 55);
             
@@ -1232,17 +1265,25 @@ input[type="radio"].visually-hidden {
         }
 
         .process__promo {
-            width: 730px;
+            width: 100%;
             display: flex;
             justify-content: space-between;
         }
 
         .process__promo-text {
-            width: 300px;
+            min-width: 380px;
+            margin-right: 20px;
+
+
+
         }
 
         .process__big-text {
             font-size: 36px;
+        }
+
+        .process__visual-image1 {
+            min-width: 400px;
         }
 
     }
@@ -1276,7 +1317,7 @@ input[type="radio"].visually-hidden {
         }
 
         .process__promo-text {
-            width: 478px;
+            min-width: 478px;
         }
 
         .process__big-text {
@@ -1285,6 +1326,11 @@ input[type="radio"].visually-hidden {
 
         .process__text {
             font-size: 16px;
+        }
+
+        .process__visual-image1 {
+            width: 770px;
+
         }
 
         .process__button:hover,
