@@ -69,6 +69,7 @@ input[type="radio"].visually-hidden {
 
 
 
+
 /*Блок Хедер */
 
 .header {
@@ -363,15 +364,16 @@ input[type="radio"].visually-hidden {
 }
 
 .process__promo {
+    width: 100%;
     padding: 0;
     margin: 0;
-    margin-bottom: 60px;
+    padding-bottom: 60px;
 }
 
 .process__promo-text {
     box-sizing: border-box;
-    width: 320px;
-    margin: 0 auto;
+    min-width: 320px;
+    margin: 0;
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 30px;
@@ -420,7 +422,9 @@ input[type="radio"].visually-hidden {
 }
 
 .process__visual {
-
+    position: relative;
+    min-width: 320px;
+    min-height: 330px;
     background-image: url(../img/dash-bg.png);
     background-size: contain;
     background-position: 50% 0;
@@ -429,12 +433,19 @@ input[type="radio"].visually-hidden {
 }
 
 .process__visual-image1 {
-
+    position: absolute;
+    top: 0;
+    left: -10%;
     min-width: 320px;
-    min-height: 328px;
-
+    min-height: 330px;
 }
 
+.process__visual-image2 {
+    position: absolute;
+
+    width: 215px;
+    min-height: 185px;
+}
 
 /* features */
 
@@ -1265,26 +1276,29 @@ input[type="radio"].visually-hidden {
         }
 
         .process__promo {
-            width: 100%;
             display: flex;
             justify-content: space-between;
+            padding-bottom: 150px;
         }
 
         .process__promo-text {
-            min-width: 380px;
-            margin-right: 20px;
-
-
-
+            min-width: 340px;
         }
 
         .process__big-text {
             font-size: 36px;
         }
 
+        .process__visual {
+            min-width: 400px;
+            min-height: 300px;
+        }
+
         .process__visual-image1 {
             min-width: 400px;
+            min-height: 300px;
         }
+
 
     }
 
@@ -1328,9 +1342,21 @@ input[type="radio"].visually-hidden {
             font-size: 16px;
         }
 
-        .process__visual-image1 {
-            width: 770px;
+        .process__visual {
+            min-width: 700px;
+            min-height: 535px;
 
+        }
+
+        .process__visual-image1 {
+            min-width: 700px;
+            min-height: 535px;
+        }
+
+        .process__visual-image2 {
+
+            min-width: 270px;
+            min-height: 252px;
         }
 
         .process__button:hover,
