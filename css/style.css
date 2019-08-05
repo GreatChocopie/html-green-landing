@@ -221,9 +221,7 @@ input[type="radio"].visually-hidden {
     margin-right: 5px;
 }
 
-.intro__button-video-icon:hover {
-    fill: rgb(237, 205, 55);
-}
+
 
 .intro__button-video-text {
     font-weight: 500;
@@ -232,9 +230,15 @@ input[type="radio"].visually-hidden {
     text-transform: uppercase;
 }
 
-.intro__button-video-text:hover {
+.intro__button-video-icon:hover {
+    fill: rgb(237, 205, 55);
+}
+
+.intro__button-video-icon:hover~.intro__button-video-text {
     color: rgb(237, 205, 55);
 }
+
+
 
 .intro__visual {
     width: 100%;
