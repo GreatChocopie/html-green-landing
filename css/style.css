@@ -230,13 +230,21 @@ input[type="radio"].visually-hidden {
     text-transform: uppercase;
 }
 
-.intro__button-video-icon:hover {
+.intro__button-video:hover>.intro__button-video-icon {
+    fill: rgb(237, 205, 55);
+}
+
+.intro__button-video:hover>.intro__button-video-text {
+    color: rgb(237, 205, 55);
+}
+
+/* .intro__button-video-icon:hover {
     fill: rgb(237, 205, 55);
 }
 
 .intro__button-video-icon:hover~.intro__button-video-text {
     color: rgb(237, 205, 55);
-}
+} */
 
 
 
