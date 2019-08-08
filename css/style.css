@@ -871,70 +871,6 @@ input[type="radio"].visually-hidden {
     justify-content: space-between;
 }
 
-.faq__item-icon {
-    display: flex;
-    padding: 15px 20px;
-    align-items: center;
-    width: 60px;
-    height: 65px;
-    position: relative;
-
-}
-
-.faq__item-icon::before {
-    content: "";
-    position: absolute;
-    top: 32px;
-    left: 30px;
-    width: 15px;
-    height: 2px;
-    background-color: #000000;
-}
-
-.faq__item-icon::after {
-    content: "";
-    position: absolute;
-    top: 32px;
-    left: 30px;
-    width: 15px;
-    height: 2px;
-    background-color: #000000;
-    box-shadow: none;
-    transform: rotate(90deg);
-
-
-}
-
-/* .faq__item-icon--opened::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 25%;
-    width: 15px;
-    height: 2px;
-    background-color: #000000;
-}
-
-.faq__item-icon--opened::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 25%;
-    width: 15px;
-    height: 2px;
-    background-color: #000000;
-    transform: rotate(90deg);
-    box-shadow: none;
-} */
-
-.faq__item-icon--closed {
-    display: none;
-}
-
-/* .faq__item-answer {
-    display: none;
-} */
-
 .faq__item-ask {
     width: 240px;
     box-sizing: border-box;
@@ -953,6 +889,59 @@ input[type="radio"].visually-hidden {
     font-size: 15px;
     color: rgb(67, 65, 78);
     line-height: 1.75;
+    display: none;
+}
+
+.faq__item-icon {
+    display: flex;
+    padding: 15px 20px;
+    align-items: center;
+    width: 60px;
+    height: 65px;
+    position: relative;
+}
+
+
+
+.faq__item-icon--opened::before {
+    content: "";
+    position: absolute;
+    top: 32px;
+    left: 20px;
+    width: 15px;
+    height: 2px;
+    background-color: #000000;
+}
+
+.faq__item-icon--opened::after {
+    content: "";
+    position: absolute;
+    top: 32px;
+    left: 20px;
+    width: 15px;
+    height: 2px;
+    background-color: #000000;
+    box-shadow: none;
+    transform: rotate(90deg);
+}
+
+
+.faq__item-icon--closed::before {
+    content: "";
+    position: absolute;
+    top: 32px;
+    left: 20px;
+    width: 15px;
+    height: 2px;
+    background-color: #000000;
+}
+
+.faq__item-icon--closed {
+    display: none;
+}
+
+.faq__item-answer--show {
+    display: block;
 }
 
 .faq__button {
