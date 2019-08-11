@@ -1452,11 +1452,41 @@ input[type="radio"].visually-hidden {
         .update__subtitle {
             font-size: 24px;
         }
+
+        .update__slides-container {
+            width: 690px;
+        }
+
+        .update__slides-list {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+
+        .update__slides-button {
+            width: 170px;
+            padding: 10px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+        }
+
+        .update__slides-button-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 5px;
+            fill: rgb(255, 255, 255);
+
+        }
     }
 
     @media (min-width:1200px) {
         .update__wrapper {
             width: 1180px;
+        }
+
+        .update__slides-container {
+            width: 1100px;
         }
     }
 
