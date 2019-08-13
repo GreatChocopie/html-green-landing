@@ -646,6 +646,71 @@ input[type="radio"].visually-hidden {
     margin: 0;
 }
 
+
+.update__slides-container {
+    width: 320px;
+}
+
+.update__slides-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.update__slides-button {
+    width: 160px;
+    padding: 5px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    opacity: 0.8;
+}
+
+.update__slides-button-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    fill: rgb(255, 255, 255);
+
+}
+
+.update__slides {
+    display: none;
+}
+
+#update-radio1:checked~.update__slides-wrapper .update__slides-budge {
+    display: block;
+}
+
+#update-radio2:checked~.update__slides-wrapper .update__slides-create {
+    display: block;
+}
+
+#update-radio3:checked~.update__slides-wrapper .update__slides-view {
+    display: block;
+}
+
+#update-radio4:checked~.update__slides-wrapper .update__slides-integrations {
+    display: block;
+}
+
+#update-radio1:checked~.update__slides-list .update__slides-button--1,
+#update-radio2:checked~.update__slides-list .update__slides-button--2,
+#update-radio3:checked~.update__slides-list .update__slides-button--3,
+#update-radio4:checked~.update__slides-list .update__slides-button--4 {
+
+    opacity: 1;
+}
+
+
+
+
+
+
 /* pricing */
 .pricing {
     width: 100%;
