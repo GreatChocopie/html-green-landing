@@ -1932,3 +1932,56 @@ input[type="radio"].visually-hidden {
 .top-menu__logo-image {
     width: 130px;
 } */
+
+
+    /* .top-menu__item 
+        font-size: 16px;
+        padding: 5px 18px;
+    }
+
+    .top-menu__button-start {
+        font-size: 13px;
+        text-transform: uppercase;
+        color: var(--color-grey100);
+        padding: 8px 20px;
+        background-color: var(--color-yellow);
+        border-radius: 4px;
+        border: none;
+        outline: 0;
+    } */
+
+
+}
+
+/* .top-menu {
+margin: 0 auto;
+width: 1110px;
+display: flex;
+align-items: center;
+}
+
+.top-menu__item {
+font-size: 16px;
+padding: 5px 18px;
+}
+
+.top-menu__button-start {
+font-size: 13px;
+text-transform: uppercase;
+color: var(--color-grey100);
+padding: 8px 20px;
+background-color: var(--color-yellow);
+border-radius: 4px;
+
+}
+
+.top-menu__navigation {
+list-style: none;
+display: flex;
+margin-left: auto;
+
+}
+
+.top-menu__logo-image {
+width: 130px;
+} */
