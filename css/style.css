@@ -685,6 +685,7 @@ input[type="radio"].visually-hidden {
     flex-shrink: 0;
     opacity: 0.8;
     font-size: 14px;
+    cursor: pointer;
 }
 
 .update__slides-button-icon {
@@ -768,13 +769,16 @@ input[type="radio"].visually-hidden {
 /* pricing */
 .pricing {
     width: 100%;
+    background-color: rgb(255, 255, 255);
 }
+
 
 .pricing__wrapper {
     box-sizing: border-box;
     width: 320px;
     margin: 0 auto;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
     padding-left: 5px;
     padding-right: 5px;
     display: flex;
@@ -790,27 +794,73 @@ input[type="radio"].visually-hidden {
     padding: 0;
     margin: 0 auto;
     margin-bottom: 30px;
+    width: 300px;
 }
 
 .pricing__headline {
+    box-sizing: border-box;
+    margin-top: 0px;
+    margin-bottom: 5px;
     font-size: 14px;
-    padding: 0;
-    margin: 0;
+    color: rgb(42, 162, 117);
+    display: block;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+
 }
 
 .pricing__subtitle {
-    line-height: 1.67;
-    font-weight: 500;
+    box-sizing: border-box;
+    margin-top: 0px;
+    margin-bottom: 0px;
     font-size: 20px;
+    color: rgb(15, 33, 55);
+    font-weight: 500;
     text-align: center;
-    padding: 0;
-    margin: 0;
+    line-height: 1.67;
+    letter-spacing: -0.025em;
+}
+
+.pricing__button-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.pricing__button {
+    width: 120px;
+    height: 45px;
+    padding: 0px 5px;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(111, 122, 135);
+    background: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(228, 233, 238);
+}
+
+
+.pricing__button--monthly {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 5px;
+}
+
+.pricing__button--annual {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 0px;
 }
 
 .pricing__list {
     list-style: none;
     padding: 0;
     margin: 0;
+    color: rgb(48, 43, 78);
 }
 
 /* our-users */
@@ -1655,9 +1705,6 @@ input[type="radio"].visually-hidden {
             opacity: 1;
         }
 
-        .update__slides-button:hover {
-            opacity: 1;
-        }
     }
 
     @media (min-width:1200px) {
@@ -1684,6 +1731,18 @@ input[type="radio"].visually-hidden {
             justify-content: space-around;
         }
 
+        .update__slides-button:hover,
+        .update__slides-button:focus {
+            opacity: 1;
+        }
+
+        #update-radio1:focus~.update__slides-list .update__slides-button--1,
+        #update-radio2:focus~.update__slides-list .update__slides-button--2,
+        #update-radio3:focus~.update__slides-list .update__slides-button--3,
+        #update-radio4:focus~.update__slides-list .update__slides-button--4 {
+            outline: rgb(59, 153, 252) auto 5px;
+        }
+
 
 
     }
@@ -1707,6 +1766,13 @@ input[type="radio"].visually-hidden {
         .pricing__subtitle {
             font-size: 24px;
         }
+
+        .pricing__button {
+            width: 165px;
+            height: 50px;
+            padding: 8px 15px;
+            font-size: 16px;
+        }
     }
 
     @media (min-width:1200px) {
@@ -1717,6 +1783,8 @@ input[type="radio"].visually-hidden {
         .pricing__list {
             width: 100%;
         }
+
+
     }
 
     /* media our-users */
