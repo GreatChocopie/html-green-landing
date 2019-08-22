@@ -826,6 +826,7 @@ input[type="radio"].visually-hidden {
 .pricing__button-wrapper {
     display: flex;
     justify-content: center;
+    padding-bottom: 30px;
 }
 
 .pricing__button {
@@ -861,6 +862,14 @@ input[type="radio"].visually-hidden {
     padding: 0;
     margin: 0;
     color: rgb(48, 43, 78);
+}
+
+.pricing__item {
+    width: 290px;
+    box-sizing: border-box;
+    padding: 45px 35px;
+    border: 1px solid rgb(228, 233, 238);
+    border-radius: 5px;
 }
 
 /* our-users */

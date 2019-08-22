@@ -3,6 +3,7 @@ var faqButtonOpen = faq.querySelector(".faq__item-icon--opened");
 var faqAnswer = faq.querySelector(".faq__item-answer");
 var faqButtonClose = faq.querySelector(".faq__item-icon--closed");
 
+
 var update = document.querySelector(".update");
 var updateButtonLeft = document.querySelector(".update__slides-list-left--js");
 var updateButtonRight = document.querySelector(".update__slides-list-right--js");
