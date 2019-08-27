@@ -949,10 +949,24 @@ input[type="radio"].visually-hidden {
 }
 
 .pricing__item-features li {
+    position: relative;
     margin-bottom: 20px;
     padding-left: 25px;
     font-size: 15px;
     color: rgb(67, 65, 78);
+}
+
+.pricing__item-features li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/check-bold.svg);
+    background-repeat: no-repeat;
+    background-size: 15px;
+
 }
 
 /* our-users */
