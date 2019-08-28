@@ -171,7 +171,6 @@ input[type="radio"].visually-hidden {
     font-weight: 700;
     text-align: center;
     line-height: 1.2;
-    letter-spacing: -0.040em;
     font-size: 24px;
     text-align: center;
 }
@@ -197,7 +196,7 @@ input[type="radio"].visually-hidden {
     margin-right: 30px;
     box-sizing: border-box;
     font-weight: 500;
-    font-size: 13px;
+    font-size: 14px;
     text-transform: uppercase;
     text-align: center;
     color: rgb(0, 0, 0);
@@ -225,7 +224,7 @@ input[type="radio"].visually-hidden {
 
 .intro__button-video-text {
     font-weight: 500;
-    font-size: 13px;
+    font-size: 14px;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
 }
@@ -485,6 +484,7 @@ input[type="radio"].visually-hidden {
     text-transform: uppercase;
     color: rgb(42, 162, 117);
     font-weight: 700;
+    letter-spacing: 0.15em;
 }
 
 .features__subtitle {
@@ -633,6 +633,7 @@ input[type="radio"].visually-hidden {
 
 .update__headline {
     font-size: 14px;
+    letter-spacing: 0.15em;
     padding: 0;
     margin: 0;
 }
