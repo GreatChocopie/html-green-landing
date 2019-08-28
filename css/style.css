@@ -625,6 +625,7 @@ input[type="radio"].visually-hidden {
     margin-bottom: 30px;
     padding-left: 5px;
     padding-right: 5px;
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -831,6 +832,10 @@ input[type="radio"].visually-hidden {
 }
 
 .pricing__button {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 120px;
     height: 45px;
     padding: 0px 5px;
@@ -858,6 +863,14 @@ input[type="radio"].visually-hidden {
     border-bottom-left-radius: 0px;
 }
 
+.pricing__list--monthly {
+    display: none;
+}
+
+.pricing__list--annual {
+    display: none;
+}
+
 .pricing__list {
     list-style: none;
     padding: 0;
@@ -865,8 +878,39 @@ input[type="radio"].visually-hidden {
     color: rgb(48, 43, 78);
 }
 
+.pricing__list-monthly {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pricing__list-annual {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#pricing-radio1:checked~.pricing__list-wrapper .pricing__list--monthly {
+    display: block;
+}
+
+#pricing-radio2:checked~.pricing__list-wrapper .pricing__list--annual {
+    display: block;
+}
+
+#pricing-radio1:checked~.pricing__button-wrapper .pricing__button--monthly {
+    color: rgb(42, 162, 117);
+    border-color: rgb(42, 162, 117);
+}
+
+#pricing-radio2:checked~.pricing__button-wrapper .pricing__button--annual {
+    color: rgb(42, 162, 117);
+    border-color: rgb(42, 162, 117);
+}
+
 .pricing__item {
     width: 290px;
+    margin-bottom: 15px;
     box-sizing: border-box;
     padding: 45px 35px;
     border: 1px solid rgb(228, 233, 238);
@@ -1860,12 +1904,6 @@ input[type="radio"].visually-hidden {
             width: 760px;
         }
 
-        .pricing__list {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
         .pricing__item {
             width: 325px;
         }
@@ -1915,7 +1953,15 @@ input[type="radio"].visually-hidden {
 
         .pricing__list {
             width: 1140px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
         }
+
+        .pricing__button {
+            cursor: pointer;
+        }
+
 
         .pricing__item {
             width: 325px;
