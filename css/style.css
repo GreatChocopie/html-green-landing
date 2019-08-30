@@ -74,7 +74,9 @@ input[type="radio"].visually-hidden {
 
 .header {
     width: 100%;
-    background-color: var(--color-green2);
+
+    position: absolute;
+    z-index: 9999;
 }
 
 .top-menu {
@@ -129,6 +131,10 @@ input[type="radio"].visually-hidden {
 /* intro */
 .intro {
     width: 100%;
+    background-image: url(../img/banner-texture.png), linear-gradient(35deg, rgb(147, 249, 185) 0%, rgb(29, 151, 108) 100%);
+    background-size: cover;
+    background-position: center top;
+    padding: 50px 0px 50px;
 }
 
 .intro__wrapper {
@@ -619,13 +625,14 @@ input[type="radio"].visually-hidden {
 /* update */
 .update {
     width: 100%;
+    background: linear-gradient(35deg, rgb(147, 249, 185) 0%, rgb(29, 151, 108) 100%);
 }
 
 .update__wrapper {
     box-sizing: border-box;
     width: 320px;
     margin: 0 auto;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 10px;
@@ -755,7 +762,7 @@ input[type="radio"].visually-hidden {
     padding: 0;
     margin: 0 auto;
     margin-bottom: 30px;
-    width: 300px;
+    min-width: 300px;
 }
 
 .pricing__headline {
@@ -1579,6 +1586,7 @@ input[type="radio"].visually-hidden {
     }
 
     @media (min-width:1200px) {
+
         .top-menu {
             width: 1110px;
         }
@@ -1627,6 +1635,10 @@ input[type="radio"].visually-hidden {
     /* media Intro */
 
     @media (min-width:760px) {
+        .intro {
+            padding: 80px 0px 50px;
+        }
+
         .intro__wrapper {
             width: 700px;
             padding-top: 70px;
@@ -1652,6 +1664,10 @@ input[type="radio"].visually-hidden {
     }
 
     @media (min-width:1200px) {
+        .intro {
+            padding: 100px 0px 50px;
+        }
+
         .intro__wrapper {
             width: 1110px;
         }
@@ -1721,7 +1737,7 @@ input[type="radio"].visually-hidden {
         .process__promo {
             display: flex;
             justify-content: space-between;
-            padding-bottom: 150px;
+            padding-bottom: 50px;
         }
 
         .process__promo-text {
@@ -1965,6 +1981,7 @@ input[type="radio"].visually-hidden {
 
         .pricing__subtitle {
             font-size: 24px;
+
         }
 
         .pricing__button {
