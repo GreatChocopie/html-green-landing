@@ -955,6 +955,12 @@ input[type="radio"].visually-hidden {
     margin-bottom: 40px;
 }
 
+.pricing__item-button--green {
+    color: rgb(255, 255, 255);
+    background-color: rgb(42, 162, 117);
+
+}
+
 .pricing__item-features {
     list-style: none;
     padding: 0;
@@ -2055,6 +2061,14 @@ input[type="radio"].visually-hidden {
             padding: 60px 45px;
         }
 
+        .pricing__item-button:hover,
+        .pricing__item-button:focus {
+            color: rgb(255, 255, 255);
+            background-color: rgb(42, 162, 117);
+            box-shadow: rgba(42, 162, 117, 0.57) 0px 8px 20px -6px;
+            border-color: rgb(42, 162, 117);
+        }
+
 
 
     }
@@ -2300,18 +2314,19 @@ input[type="radio"].visually-hidden {
             padding-top: 150px;
         }
 
-        /* .footer::before {
+        /* 
+        .footer::before {
             content: "";
             position: absolute;
-            box-sizing: border-box;
-            width: 100%;
-            padding-bottom: 100%;
+            width: 104%;
+            padding-bottom: 104%;
             border-top-right-radius: 11%;
             top: 18%;
             left: 0px;
             pointer-events: none;
             background-color: rgb(255, 255, 255);
             transform: rotate(-6deg);
+
         } */
 
         .footer-nav {
