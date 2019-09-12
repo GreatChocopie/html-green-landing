@@ -1,3 +1,10 @@
+var topMenu = document.querySelector(".top-menu");
+var menuButtonOpen = topMenu.querySelector(".top-menu__toggle");
+var menuButtonClose = topMenu.querySelector(".top-menu__button-close");
+var menuOpen = topMenu.querySelector(".top-menu__wrapper");
+
+
+
 var faq1 = document.querySelector(".faq__item-1");
 var faq1ButtonOpen = faq1.querySelector(".faq__item-icon--opened");
 var faq1Answer = faq1.querySelector(".faq__item-answer");
@@ -22,7 +29,14 @@ var faq4Answer = faq4.querySelector(".faq__item-answer");
 var faq4ButtonClose = faq4.querySelector(".faq__item-icon--closed");
 var faq4AskOpen = faq4.querySelector(".faq__item-ask");
 
-
+menuButtonOpen.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  menuOpen.classList.add("top-menu__wrapper--open");
+});
+menuButtonClose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  menuOpen.classList.remove("top-menu__wrapper--open");
+});
 
 
 faq1ButtonOpen.addEventListener("click", function (evt) {
