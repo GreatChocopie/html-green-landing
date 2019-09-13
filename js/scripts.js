@@ -39,6 +39,7 @@ menuButtonClose.addEventListener("click", function (evt) {
 });
 
 
+
 faq1ButtonOpen.addEventListener("click", function (evt) {
   evt.preventDefault();
   faq1Answer.classList.add("faq__item-answer--show");
