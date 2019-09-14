@@ -455,6 +455,8 @@ input[type="radio"].visually-hidden {
     background-size: contain;
     background-position: 50% 0;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
 
 }
 
@@ -462,15 +464,18 @@ input[type="radio"].visually-hidden {
     position: absolute;
     top: 0;
     left: -10%;
+
     min-width: 320px;
     min-height: 330px;
 }
 
 .process__visual-image2 {
-    position: absolute;
-
+    margin-bottom: -10%;
+    margin-right: 2%;
     width: 215px;
     min-height: 185px;
+    align-self: flex-end;
+    z-index: 10;
 }
 
 /* features */
@@ -1870,7 +1875,8 @@ input[type="radio"].visually-hidden {
             min-width: 400px;
             min-height: 300px;
         }
-
+        .process__visual-image2 {
+            margin-bottom: 15%;
 
     }
 
@@ -1927,8 +1933,9 @@ input[type="radio"].visually-hidden {
 
         .process__visual-image2 {
 
-            min-width: 270px;
-            min-height: 252px;
+            min-width: 320px;
+            min-height: 320px;
+            margin-bottom: -10%;
         }
 
         .process__button:hover,
