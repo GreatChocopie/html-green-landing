@@ -2,8 +2,11 @@ var topMenu = document.querySelector(".top-menu");
 var menuButtonOpen = topMenu.querySelector(".top-menu__toggle");
 var menuButtonClose = topMenu.querySelector(".top-menu__button-close");
 var menuOpen = topMenu.querySelector(".top-menu__wrapper");
-var menuItem = topMenu.querySelector(".top-menu__item-a");
-
+var menuItem1 = topMenu.querySelector(".top-menu__item-1");
+var menuItem2 = topMenu.querySelector(".top-menu__item-2");
+var menuItem3 = topMenu.querySelector(".top-menu__item-3");
+var menuItem4 = topMenu.querySelector(".top-menu__item-4");
+var menuItem5 = topMenu.querySelector(".top-menu__item-5");
 
 
 var faq1 = document.querySelector(".faq__item-1");
@@ -38,10 +41,28 @@ menuButtonClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   menuOpen.classList.remove("top-menu__wrapper--open");
 });
-menuItem.addEventListener("click", function (evt) {
-  evt.preventDefault();
+menuItem1.addEventListener("click", function (evt) {
+
   menuOpen.classList.remove("top-menu__wrapper--open");
 });
+menuItem2.addEventListener("click", function (evt) {
+  menuOpen.classList.remove("top-menu__wrapper--open");
+});
+menuItem3.addEventListener("click", function (evt) {
+
+  menuOpen.classList.remove("top-menu__wrapper--open");
+});
+menuItem4.addEventListener("click", function (evt) {
+
+  menuOpen.classList.remove("top-menu__wrapper--open");
+});
+menuItem5.addEventListener("click", function (evt) {
+
+  menuOpen.classList.remove("top-menu__wrapper--open");
+});
+
+
+
 
 
 
