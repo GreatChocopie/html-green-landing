@@ -2,6 +2,7 @@ var topMenu = document.querySelector(".top-menu");
 var menuButtonOpen = topMenu.querySelector(".top-menu__toggle");
 var menuButtonClose = topMenu.querySelector(".top-menu__button-close");
 var menuOpen = topMenu.querySelector(".top-menu__wrapper");
+var menuItem = topMenu.querySelector(".top-menu__item-a");
 
 
 
@@ -37,6 +38,11 @@ menuButtonClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   menuOpen.classList.remove("top-menu__wrapper--open");
 });
+menuItem.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  menuOpen.classList.remove("top-menu__wrapper--open");
+});
+
 
 
 
