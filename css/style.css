@@ -287,7 +287,6 @@ input[type="radio"].visually-hidden {
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 30px;
-    padding-bottom: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -491,6 +490,7 @@ input[type="radio"].visually-hidden {
     margin: 0 auto;
     padding-left: 5px;
     padding-right: 5px;
+    padding-top: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -766,7 +766,7 @@ input[type="radio"].visually-hidden {
     width: 320px;
     margin: 0 auto;
     padding-bottom: 30px;
-    padding-top: 30px;
+    padding-top: 70px;
     padding-left: 5px;
     padding-right: 5px;
     display: flex;
@@ -1095,8 +1095,7 @@ input[type="radio"].visually-hidden {
     box-sizing: border-box;
     width: 320px;
     margin: 0 auto;
-    padding-bottom: 60px;
-    padding-top: 30px;
+    padding-top: 70px;
     padding-left: 5px;
     padding-right: 5px;
     display: flex;
@@ -1251,6 +1250,7 @@ input[type="radio"].visually-hidden {
     box-sizing: border-box;
     width: 320px;
     margin: 0 auto;
+    padding-top: 70px;
     padding-bottom: 60px;
     padding-left: 5px;
     padding-right: 5px;
@@ -1485,7 +1485,7 @@ input[type="radio"].visually-hidden {
     background: linear-gradient(rgb(255, 255, 255) 0%, rgb(252, 252, 253) 5%, rgb(252, 252, 253) 100%);
     color: #000000;
     padding-top: 30px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
 
 }
 
@@ -2429,7 +2429,7 @@ input[type="radio"].visually-hidden {
     @media (min-width:760px) {
         .footer {
             position: relative;
-            padding-top: 150px;
+            padding-top: 60px;
         }
 
         /* 
