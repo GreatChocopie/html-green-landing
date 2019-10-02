@@ -68,8 +68,12 @@ input[type="radio"].visually-hidden {
 }
 
 
-
-
+.nav-colored {
+    background-color: #FFFFFF;
+}
+.nav-transparent {
+    background-color: transparent;
+}
 /*Блок Хедер */
 
 .header {
@@ -78,14 +82,26 @@ input[type="radio"].visually-hidden {
     position: absolute;
     z-index: 9999;
 }
-
+.header__wrapper {
+    width: 100%;
+    position: relative;  
+}
+.header__menu-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed; 
+}
 .top-menu {
     width: 300px;
-    margin: 0 auto;
+    margin: 0;
     padding: 15px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: transparent;
+
+    
 }
 
 .top-menu__toggle {
@@ -1687,6 +1703,7 @@ input[type="radio"].visually-hidden {
 
 /* media header */
 @media (min-width:760px) {
+    
     .top-menu {
         width: 690px;
     }
@@ -1696,7 +1713,7 @@ input[type="radio"].visually-hidden {
     }
 
     @media (min-width:1200px) {
-
+        
         .top-menu {
             width: 1110px;
         }
