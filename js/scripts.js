@@ -131,11 +131,22 @@ faq4ButtonClose.addEventListener("click", function (evt) {
 
 window.addEventListener('scroll', function (e) {
   var nav = document.getElementById('nav');
+  var logoWhite = document.querySelector(".top-menu__logo");
+  var logoBlack = document.querySelector(".top-menu__logo--black");
+  var navToogle = document.querySelector(".top-menu__toggle-span");
   if (document.documentElement.scrollTop || document.body.scrollTop > window.innerHeight) {
     nav.classList.add('nav-colored');
     nav.classList.remove('nav-transparent');
+    logoWhite.classList.add('top-menu__logo-none');
+    logoBlack.classList.add('top-menu__logo-block');
+    navToogle.classList.add('top-menu__toggle-span--black');
+    navToogle.classList.remove('top-menu__toggle-span--white');
   } else {
     nav.classList.add('nav-transparent');
     nav.classList.remove('nav-colored');
+    logoWhite.classList.remove('top-menu__logo-none');
+    logoBlack.classList.remove('top-menu__logo-block');
+    navToogle.classList.add('top-menu__toggle-span--white');
+    navToogle.classList.remove('top-menu__toggle-span--black');
   }
 });

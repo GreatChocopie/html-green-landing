@@ -68,12 +68,7 @@ input[type="radio"].visually-hidden {
 }
 
 
-.nav-colored {
-    background-color: #FFFFFF;
-}
-.nav-transparent {
-    background-color: transparent;
-}
+
 /*Блок Хедер */
 
 .header {
@@ -110,7 +105,7 @@ input[type="radio"].visually-hidden {
     border: none;
 }
 
-.top-menu__toggle span {
+.top-menu__toggle-span--white {
     display: block;
     width: 100%;
     height: 2px;
@@ -120,7 +115,21 @@ input[type="radio"].visually-hidden {
     transition: all 0.3s ease 0s;
 }
 
-.top-menu__toggle span:last-child {
+.top-menu__toggle-span--white:last-child {
+    width: calc(100% - 10px);
+    margin-bottom: 0px;
+}
+.top-menu__toggle-span--black {
+    display: block;
+    width: 100%;
+    height: 2px;
+    float: right;
+    background-color:#000000;
+    margin: 4px 0px;
+    transition: all 0.3s ease 0s;
+}
+
+.top-menu__toggle-span--black:last-child {
     width: calc(100% - 10px);
     margin-bottom: 0px;
 }
@@ -128,6 +137,24 @@ input[type="radio"].visually-hidden {
 .top-menu__logo-image {
     width: 130px;
 }
+.top-menu__logo--black {
+    display: none;
+}
+
+.nav-colored {
+    background-color: #FFFFFF;
+}
+
+.nav-transparent {
+    background-color: transparent;
+}
+.top-menu__logo-none {
+    display: none;
+}
+.top-menu__logo-block {
+    display: block;
+}
+
 
 .top-menu__navigation {
     list-style: none;
