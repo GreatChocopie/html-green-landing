@@ -1785,6 +1785,9 @@ input[type="radio"].visually-hidden {
             color: var(--color-yellow);
 
         }
+        .top-menu__item-a:active {
+            color: var(--color-yellow);
+        }
 
         .top-menu__button-start {
             cursor: pointer;
