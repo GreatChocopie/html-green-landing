@@ -133,21 +133,15 @@ window.addEventListener('scroll', function (e) {
   var nav = document.getElementById('nav');
   var logoWhite = document.querySelector(".top-menu__logo");
   var logoBlack = document.querySelector(".top-menu__logo--black");
-  var navToogle1 = document.querySelector(".top-menu__toggle-span1");
-  var navToogle2 = document.querySelector(".top-menu__toggle-span2");
-  var navToogle3 = document.querySelector(".top-menu__toggle-span3");
+  var navToogle = document.querySelector(".top-menu__toggle");
+
   var navNavigation = document.querySelector(".top-menu__navigation");
   if (document.documentElement.scrollTop || document.body.scrollTop > window.innerHeight) {
     nav.classList.add('nav-colored');
     nav.classList.remove('nav-transparent');
     logoWhite.classList.add('top-menu__logo-none');
     logoBlack.classList.add('top-menu__logo-block');
-    navToogle1.classList.add('top-menu__toggle-span--black');
-    navToogle1.classList.remove('top-menu__toggle-span--white');
-    navToogle2.classList.add('top-menu__toggle-span--black');
-    navToogle2.classList.remove('top-menu__toggle-span--white');
-    navToogle3.classList.add('top-menu__toggle-span--black');
-    navToogle3.classList.remove('top-menu__toggle-span--white');
+    navToogle.classList.add('top-menu__toggle--black');
     navNavigation.classList.add('top-menu__navigation--black');
 
   } else {
@@ -155,13 +149,8 @@ window.addEventListener('scroll', function (e) {
     nav.classList.remove('nav-colored');
     logoWhite.classList.remove('top-menu__logo-none');
     logoBlack.classList.remove('top-menu__logo-block');
-    navToogle1.classList.add('top-menu__toggle-span--white');
-    navToogle1.classList.remove('top-menu__toggle-span--black');
-    navToogle2.classList.add('top-menu__toggle-span--white');
-    navToogle2.classList.remove('top-menu__toggle-span--black');
-    navToogle3.classList.add('top-menu__toggle-span--white');
-    navToogle3.classList.remove('top-menu__toggle-span--black');
 
+    navToogle.classList.remove('top-menu__toggle--black')
     navNavigation.classList.remove('top-menu__navigation--black');
 
   }

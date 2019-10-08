@@ -105,7 +105,7 @@ input[type="radio"].visually-hidden {
     border: none;
 }
 
-.top-menu__toggle-span--white {
+.top-menu__toggle .top-menu__toggle-span {
     display: block;
     width: 100%;
     height: 2px;
@@ -115,11 +115,12 @@ input[type="radio"].visually-hidden {
     transition: all 0.3s ease 0s;
 }
 
-.top-menu__toggle-span--white:last-child {
+.top-menu__toggle-span:last-child {
     width: calc(100% - 10px);
     margin-bottom: 0px;
 }
-.top-menu__toggle-span--black {
+
+.top-menu__toggle--black .top-menu__toggle-span {
     display: block;
     width: 100%;
     height: 2px;
@@ -128,11 +129,11 @@ input[type="radio"].visually-hidden {
     margin: 4px 0px;
     transition: all 0.3s ease 0s;
 }
-
-.top-menu__toggle-span--black:last-child {
+.top-menu__toggle--black .top-menu__toggle-span:last-child {
     width: calc(100% - 10px);
     margin-bottom: 0px;
 }
+
 
 .top-menu__logo-image {
     width: 130px;
