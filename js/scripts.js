@@ -136,6 +136,7 @@ window.addEventListener('scroll', function (e) {
   var navToogle1 = document.querySelector(".top-menu__toggle-span1");
   var navToogle2 = document.querySelector(".top-menu__toggle-span2");
   var navToogle3 = document.querySelector(".top-menu__toggle-span3");
+  var navNavigation = document.querySelector(".top-menu__navigation");
   if (document.documentElement.scrollTop || document.body.scrollTop > window.innerHeight) {
     nav.classList.add('nav-colored');
     nav.classList.remove('nav-transparent');
@@ -147,6 +148,8 @@ window.addEventListener('scroll', function (e) {
     navToogle2.classList.remove('top-menu__toggle-span--white');
     navToogle3.classList.add('top-menu__toggle-span--black');
     navToogle3.classList.remove('top-menu__toggle-span--white');
+    navNavigation.classList.add('top-menu__navigation--black');
+    navNavigation.classList.remove('top-menu__navigation');
   } else {
     nav.classList.add('nav-transparent');
     nav.classList.remove('nav-colored');
@@ -158,6 +161,8 @@ window.addEventListener('scroll', function (e) {
     navToogle2.classList.remove('top-menu__toggle-span--black');
     navToogle3.classList.add('top-menu__toggle-span--white');
     navToogle3.classList.remove('top-menu__toggle-span--black');
+    navNavigation.classList.add('top-menu__navigation');
+    navNavigation.classList.remove('top-menu__navigation--black');
 
   }
 });
