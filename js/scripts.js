@@ -149,7 +149,7 @@ window.addEventListener('scroll', function (e) {
     navToogle3.classList.add('top-menu__toggle-span--black');
     navToogle3.classList.remove('top-menu__toggle-span--white');
     navNavigation.classList.add('top-menu__navigation--black');
-    navNavigation.classList.remove('top-menu__navigation');
+
   } else {
     nav.classList.add('nav-transparent');
     nav.classList.remove('nav-colored');
@@ -161,7 +161,7 @@ window.addEventListener('scroll', function (e) {
     navToogle2.classList.remove('top-menu__toggle-span--black');
     navToogle3.classList.add('top-menu__toggle-span--white');
     navToogle3.classList.remove('top-menu__toggle-span--black');
-    navNavigation.classList.add('top-menu__navigation');
+
     navNavigation.classList.remove('top-menu__navigation--black');
 
   }
