@@ -1744,7 +1744,7 @@ input[type="radio"].visually-hidden {
     .top-menu__navigation-wrapper {
         min-width: 420px;
     }
-
+}
     @media (min-width:1200px) {
         
         .top-menu {
@@ -1959,7 +1959,7 @@ input[type="radio"].visually-hidden {
             margin-bottom: 15%;
 
     }
-
+    }
     @media (min-width:1200px) {
         .process__wrapper {
             width: 1180px;
