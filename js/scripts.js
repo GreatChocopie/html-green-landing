@@ -70,3 +70,47 @@ window.addEventListener('scroll', function (e) {
 
   }
 });
+
+
+/**
+   Проверяет, выше ли текущий элемент чем область экрана
+*/
+function isScrolledElemHigher(elem) {
+  var docViewTop = document.documentElement.scrollTop;
+  var docViewBottom = docViewTop + window.innerHeight;
+
+  var elemTop = elem.getBoundingClientRect().top + document.documentElement.scrollTop
+  var elemBottom = elemTop + elem.clientHeight;
+
+  return (elemBottom <= docViewBottom);
+}
+
+function updateMenu() {
+  var menu_items = document.querySelectorAll('.top-menu__item a');
+
+  // Идем в цикле по всем элементам
+  menu_items.forEach(function (elem) {
+    // Удаляем старые классы активности
+    elem.classList.remove('top-menu__item-a--current');
+  });
+
+  // Идем в цикле по всем элементам c конца!
+  for (var i = menu_items.length - 1; i >= 0; i--) {
+    var elem = menu_items[i];
+
+    var href_value = elem.getAttribute('href'); // тут будет #home например
+
+    // Для привязки <a id='home'>
+    // var href_target = document.querySelector(href_value);
+
+    // Для привязки <a name='home'>
+    var href_target = document.querySelector('a[name=' + href_value.substr(1) + ']');
+    // substr для удаления решетки
+
+    if (isScrolledElemArriba(href_target)) {
+      // Добавляем класс активности к найденному элементу
+      elem.classList.add('top-menu__item-a--current');
+      break; // прекращаем обход
+    }
+  }
+}
