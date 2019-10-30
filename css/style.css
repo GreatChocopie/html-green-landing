@@ -1038,7 +1038,7 @@ summary::marker{display:none;}
     margin: 0;
 }
 
-.pricing__item-features li {
+.pricing__item-features-li {
     position: relative;
     margin-bottom: 20px;
     padding-left: 25px;
@@ -1046,7 +1046,7 @@ summary::marker{display:none;}
     color: rgb(67, 65, 78);
 }
 
-.pricing__item-features li::before {
+.pricing__item-features-li::before {
     content: "";
     position: absolute;
     top: 0;
@@ -2185,7 +2185,7 @@ summary::marker{display:none;}
             font-size: 40px;
         }
 
-        .pricing__item-features li {
+        .pricing__item-features-li {
             font-size: 16px;
         }
     }
