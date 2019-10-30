@@ -47,6 +47,7 @@ button {
     padding: 0;
     border: none;
     font: inherit;
+    font-family: inherit;
     color: inherit;
     background-color: transparent;
     cursor: pointer;
@@ -1404,7 +1405,7 @@ summary::marker{display:none;}
     padding: 8px 15px;
     box-sizing: border-box;
     min-width: 150px;
-
+    font-family: inherit;
 
     font-weight: 500;
     text-transform: uppercase;
