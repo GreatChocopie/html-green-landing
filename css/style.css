@@ -738,7 +738,7 @@ summary::marker{display:none;}
 
 .update__slides-list {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 20px;
 }
@@ -753,13 +753,14 @@ summary::marker{display:none;}
     padding-bottom: 10px;
     box-sizing: border-box;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* flex-shrink: 0; */
     opacity: 0.8;
     font-size: 14px;
     cursor: pointer;
 }
+
 
 .update__slides-button-icon {
     width: 20px;
@@ -2071,6 +2072,7 @@ summary::marker{display:none;}
             opacity: 0.8;
             font-size: 16px;
         }
+        
 
         .update__slides-button-icon {
             width: 24px;
