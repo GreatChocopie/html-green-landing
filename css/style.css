@@ -754,7 +754,7 @@ summary::marker{display:none;}
     box-sizing: border-box;
     display: flex;
     /* align-items: center; */
-    /* justify-content: center; */
+    justify-content: space-around;
     /* flex-shrink: 0; */
     opacity: 0.8;
     font-size: 14px;
