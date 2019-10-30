@@ -1363,7 +1363,7 @@ summary::marker{display:none;}
 }
 .faq__item-ask:before {  
     content: "+";
-    font-size: 30px;
+    font-size: 25px;
     position: absolute;
     top: 0;
     right: 0;
@@ -1373,7 +1373,7 @@ summary::marker{display:none;}
   }
 .faq__item[open] > summary:before {
     content: "–";
-    font-size: 30px;
+    font-size: 25px;
     position: absolute;
     top: 0;
     right: 0;
@@ -2390,12 +2390,12 @@ summary::marker{display:none;}
             padding: 0 30px 23px;
         }
         .faq__item-ask:before {  
-           
+            font-size: 30px;
             padding: 20px 30px;
            
           }
         .faq__item[open] > summary:before {
-           
+            font-size: 30px;
             padding: 20px 30px;
         
           }
