@@ -107,10 +107,13 @@ function updateMenu() {
     var href_target = document.querySelector('a[name=' + href_value.substr(1) + ']');
     // substr для удаления решетки
 
-    if (isScrolledElemArriba(href_target)) {
+    if (isScrolledElemHigher(href_target)) {
       // Добавляем класс активности к найденному элементу
       elem.classList.add('top-menu__item-a--current');
       break; // прекращаем обход
     }
   }
 }
+
+// Привязываем к событию прокрутки страницы
+window.addEventListener('scroll', updateMenu);
