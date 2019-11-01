@@ -8,12 +8,12 @@ HTML, CSS, PUG, SCSS, адаптивная верстка, pixel-perfect, ани
 
 
 ### Требования
-* Семантический HTML-код для скринридеров, роботов/индексаторов Google/Bing.
-* Адаптивная верстка для мобильных, планшетов и десктопа.
-* Код проходит проверку валидаторами HMLhint, CSSlint, JSlint
-* Удовлетворяет [критериям верстки HTML-Academy](https://github.com/GreatChocopie/html-green-landing/blob/master/criteries.md)
-* Страница проходит проверку на валидность [http://validator.w3.org/nu](http://validator.w3.org/nu)
-* Доступность страницы для людей с ограниченными возможностями в соответствии с [https://weblind.ru](https://weblind.ru)
+✔️ Семантический HTML-код для скринридеров, роботов/индексаторов Google/Bing.  
+✔️ Адаптивная верстка для мобильных, планшетов и десктопа.  
+✔️ Код проходит проверку валидаторами HMLhint, CSSlint, JSlint  
+✔️ Удовлетворяет [критериям верстки HTML-Academy](https://github.com/GreatChocopie/html-green-landing/blob/master/criteries.md)  
+✔️ Страница проходит проверку на валидность [http://validator.w3.org/nu](http://validator.w3.org/nu)  
+✔️ Доступность страницы для людей с ограниченными возможностями в соответствии с [https://weblind.ru](https://weblind.ru)  
 
 
 
