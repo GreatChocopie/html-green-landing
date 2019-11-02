@@ -4,7 +4,7 @@
 
 HTML, CSS, PUG, SCSS, адаптивная верстка, pixel-perfect, анимации.
 
-Посмотреть на сайте [https://greatchocopie.github.io/html-green-landing/](https://greatchocopie.github.io/html-green-landing/). Верстка - [Милада Кустова](http://greatchocopie.github.io)
+Посмотреть на сайте [https://greatchocopie.github.io/html-green-landing/](https://greatchocopie.github.io/html-green-landing/). Верстка - [Милада Кустова](https://github.com/GreatChocopie)
 
 
 ## Требования
@@ -24,6 +24,6 @@ HTML, CSS, PUG, SCSS, адаптивная верстка, pixel-perfect, ани
 
 
 ## Если вам нужна хорошая верстка:
-* Напишите в Telegram - [89246226491](+79246226491)
+* Напишите в Telegram - [89246226491]
 * Свяжитесь в VK - [https://vk.com/id_milada](https://vk.com/id_milada)
-* Или напишите на Email - [greatchocopie@yandex.com](mailto:greatchocopie@yandex.com)
+* Или напишите на Email - [greatchocopie@yandex.com]
