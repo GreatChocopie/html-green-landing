@@ -24,6 +24,6 @@ HTML, CSS, PUG, SCSS, адаптивная верстка, pixel-perfect, ани
 
 
 ## Если вам нужна хорошая верстка:
-* Напишите в Telegram - 89246226491
+* Напишите в Telegram - [89246226491](@Greatchocopie)
 * Свяжитесь в VK - [https://vk.com/id_milada](https://vk.com/id_milada)
-* Или напишите на Email - [greatchocopie@yandex.com](https://passport.yandex.ru/profile)
+* Или напишите на Email - [greatchocopie@yandex.com](mailto:greatchocopie@yandex.com)
