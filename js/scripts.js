@@ -50,7 +50,7 @@ window.addEventListener('scroll', function (e) {
   var logoBlack = document.querySelector(".top-menu__logo--black");
   var navToogle = document.querySelector(".top-menu__toggle");
 
-  var navNavigation = document.querySelector(".top-menu__navigation");
+  var navNavigation = document.querySelector(".top-menu__navigation-list");
   if (document.documentElement.scrollTop || document.body.scrollTop > window.innerHeight) {
     nav.classList.add('nav-colored');
     nav.classList.remove('nav-transparent');

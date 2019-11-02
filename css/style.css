@@ -165,7 +165,7 @@ summary::marker{display:none;}
 }
 
 
-.top-menu__navigation {
+.top-menu__navigation-list {
     list-style: none;
     margin: 0;
 }
@@ -1628,7 +1628,7 @@ margin-top: 50px;
         flex-grow: 1;
     }
 
-    .top-menu__navigation {
+    .top-menu__navigation-list {
         position: relative;
         padding: 0;
         margin: 0;
@@ -1745,7 +1745,7 @@ margin-top: 50px;
             justify-content: space-between;
         }
 
-        .top-menu__navigation {
+        .top-menu__navigation-list {
             padding: 0;
             display: flex;
             flex-direction: row;
