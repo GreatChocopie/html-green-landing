@@ -72,17 +72,19 @@ window.addEventListener('scroll', function (e) {
 });
 
 
+
 /**
-   Проверяет, выше ли текущий элемент чем область экрана
+Проверяет, выше ли текущий элемент чем область экрана
 */
 function isScrolledElemHigher(elem) {
-  var docViewTop = document.documentElement.scrollTop;
-  var docViewBottom = docViewTop + window.innerHeight;
+var docViewTop = document.documentElement.scrollTop;
+var docViewBottom = docViewTop + window.innerHeight;
 
-  var elemTop = elem.getBoundingClientRect().top + document.documentElement.scrollTop
-  var elemBottom = elemTop + elem.clientHeight;
-
-  return (elemBottom <= docViewBottom);
+// var elemTop = elem.getBoundingClientRect().top + document.documentElement.scrollTop;
+var elemTop = elem.getBoundingClientRect().top + document.documentElement.scrollTop - document.querySelector('#nav').clientHeight;
+var elemBottom = elemTop + elem.clientHeight;
+// return (elemBottom <= docViewBottom);
+return (elemTop <= docViewTop);
 }
 
 function updateMenu() {
