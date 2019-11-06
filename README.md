@@ -1,18 +1,16 @@
-# React Next Ultimate Platform 
+# Landing page - Next Ultimate Platform
 
-Верстка лендинга. 
-
-HTML, CSS, PUG, SCSS, адаптивная верстка, pixel-perfect, анимации.
-
-Посмотреть на сайте [https://greatchocopie.github.io/html-green-landing/](https://greatchocopie.github.io/html-green-landing/). Верстка - [Милада Кустова](https://github.com/GreatChocopie)
+Верстка лендинга c использованием HTML, CSS, Pug, SCSS, адаптивная верстка, pixel-perfect, анимации.  
+Посмотреть на сайте [https://greatchocopie.github.io/html-green-landing/](https://greatchocopie.github.io/html-green-landing/).   
+Верстка - [Милада Кустова](https://github.com/GreatChocopie)
 
 
 ## Требования
 * Семантический HTML-код для скринридеров, роботов/индексаторов Google/Bing.  
+* Страница проходит проверку на валидность [http://validator.w3.org/nu](http://validator.w3.org/nu)  
 * Адаптивная верстка для мобильных, планшетов и десктопа.  
 * Код проходит проверку валидаторами HMLhint, CSSlint, JSlint  
 * Удовлетворяет [критериям верстки HTML-Academy](https://github.com/GreatChocopie/html-green-landing/blob/master/criteries.md)  
-* Страница проходит проверку на валидность [http://validator.w3.org/nu](http://validator.w3.org/nu)  
 * Доступность страницы для людей с ограниченными возможностями в соответствии с [https://weblind.ru](https://weblind.ru)  
 
 
@@ -24,6 +22,6 @@ HTML, CSS, PUG, SCSS, адаптивная верстка, pixel-perfect, ани
 
 
 ## Если вам нужна хорошая верстка:
-* Напишите в Telegram - [89246226491](@Greatchocopie)
-* Свяжитесь в VK - [https://vk.com/id_milada](https://vk.com/id_milada)
+* Напишите в Telegram - [@Greatchocopie](https://tlg.name/Greatchocopie)
+* Свяжитесь в VK - [vk.com/id_milada](https://vk.com/id_milada)
 * Или напишите на Email - [greatchocopie@yandex.com](mailto:greatchocopie@yandex.com)
