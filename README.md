@@ -9,8 +9,8 @@
 ### Требования
 * Семантический HTML-код для скринридеров, роботов/индексаторов Google/Bing.  
 * Страница проходит проверку на валидность [http://validator.w3.org/nu](http://validator.w3.org/nu)  
-* Адаптивная верстка для мобильных, планшетов и десктопа.  
-* Код проходит проверку валидаторами HMLhint, CSSlint, JSlint  
+* Верстка адаптивная, для мобильных, планшетов и десктопа.  
+* Код проходит проверку валидаторами HTMLhint, CSSlint, JSlint  
 * Удовлетворяет [критериям верстки HTML-Academy](https://github.com/GreatChocopie/html-green-landing/blob/master/criteries.md)  
 * Доступность страницы для людей с ограниченными возможностями в соответствии с [https://weblind.ru](https://weblind.ru)  
 
