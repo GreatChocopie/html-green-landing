@@ -77,14 +77,14 @@ window.addEventListener('scroll', function (e) {
 Проверяет, выше ли текущий элемент чем область экрана
 */
 function isScrolledElemHigher(elem) {
-var docViewTop = document.documentElement.scrollTop;
-var docViewBottom = docViewTop + window.innerHeight;
+  var docViewTop = document.documentElement.scrollTop;
+  var docViewBottom = docViewTop + window.innerHeight;
 
-// var elemTop = elem.getBoundingClientRect().top + document.documentElement.scrollTop;
-var elemTop = elem.getBoundingClientRect().top + document.documentElement.scrollTop - document.querySelector('#nav').clientHeight;
-var elemBottom = elemTop + elem.clientHeight;
-// return (elemBottom <= docViewBottom);
-return (elemTop <= docViewTop);
+  // var elemTop = elem.getBoundingClientRect().top + document.documentElement.scrollTop;
+  var elemTop = elem.getBoundingClientRect().top + document.documentElement.scrollTop - document.querySelector('#nav').clientHeight;
+  var elemBottom = elemTop + elem.clientHeight;
+  // return (elemBottom <= docViewBottom);
+  return (elemTop <= docViewTop);
 }
 
 function updateMenu() {
@@ -103,10 +103,10 @@ function updateMenu() {
     var href_value = elem.getAttribute('href'); // тут будет #home например
 
     // Для привязки <a id='home'>
-    // var href_target = document.querySelector(href_value);
+    var href_target = document.querySelector(href_value);
 
     // Для привязки <a name='home'>
-    var href_target = document.querySelector('a[name=' + href_value.substr(1) + ']');
+    // var href_target = document.querySelector('a[name=' + href_value.substr(1) + ']');
     // substr для удаления решетки
 
     if (isScrolledElemHigher(href_target)) {
