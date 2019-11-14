@@ -65,7 +65,7 @@ window.addEventListener('scroll', function (e) {
     logoWhite.classList.remove('top-menu__logo-none');
     logoBlack.classList.remove('top-menu__logo-block');
 
-    navToogle.classList.remove('top-menu__toggle--black')
+    navToogle.classList.remove('top-menu__toggle--black');
     navNavigation.classList.remove('top-menu__navigation--black');
 
   }

@@ -29,7 +29,7 @@ body {
     margin: 0;
     padding: 0;
     color: rgb(255, 255, 255);
-    background: varrgb(255, 255, 255);
+    background: rgb(255, 255, 255);
 }
 
 a {
@@ -45,7 +45,6 @@ button {
     padding: 0;
     border: none;
     font: inherit;
-    font-family: inherit;
     color: inherit;
     background-color: transparent;
     cursor: pointer;
@@ -198,6 +197,13 @@ summary::marker {
     background-color: var(--color-yellow);
     border-radius: 4px;
     border: none;
+    cursor: pointer;
+}
+
+
+.top-menu__button-start:hover,
+.top-menu__button-start:focus {
+    box-shadow: 0 8px 20px 3px rgba(237, 205, 55, 0.5);
 }
 
 /* intro */
@@ -394,7 +400,7 @@ summary::marker {
     margin-bottom: 35px;
 }
 
-.process__step-namber {
+.process__step-number {
     position: absolute;
     box-sizing: border-box;
     display: flex;
@@ -410,7 +416,7 @@ summary::marker {
     font-size: 20px;
     color: rgb(52, 61, 72);
     font-weight: 700;
-    box-shadow: rgba(42, 96, 151, 0.25) 0 6px 10.34px 0.66px;
+    box-shadow: rgba(42, 96, 151, 0.25) 0 6px 10px 1px;
 }
 
 .process__step-img {
@@ -719,7 +725,9 @@ summary::marker {
     font-size: 20px;
     text-align: center;
     padding: 0;
-    margin: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
     margin-bottom: 10px;
 }
 
@@ -813,8 +821,7 @@ summary::marker {
     flex-direction: column;
     align-items: center;
     padding: 0;
-    margin: 0 auto;
-    margin-bottom: 30px;
+    margin: 0 auto 30px;
     min-width: 300px;
 }
 
@@ -985,11 +992,8 @@ summary::marker {
     min-width: 48px;
     font-weight: 500;
     text-transform: uppercase;
-    padding-top: 8px;
-    padding-bottom: 8px;
     box-sizing: border-box;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 8px 10px;
     width: 222px;
     font-family: inherit;
     font-size: 14px;
@@ -999,8 +1003,7 @@ summary::marker {
     border-width: 1px;
     border-style: solid;
     border-radius: 4px;
-    margin: 0 auto;
-    margin-bottom: 40px;
+    margin: 0 auto 40px;
 }
 
 .pricing__item-button--green {
@@ -1047,10 +1050,7 @@ summary::marker {
     box-sizing: border-box;
     width: 330px;
     margin: 0 auto;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1058,8 +1058,7 @@ summary::marker {
 
 .our-users__big-text {
     font-size: 26px;
-    margin: 0;
-    margin-bottom: 20px;
+    margin: 0 0 20px;
     padding: 0;
     color: rgb(15, 33, 55);
     font-weight: 400;
@@ -1070,8 +1069,7 @@ summary::marker {
     font-size: 16px;
     line-height: 1.75;
     padding: 0;
-    margin: 0;
-    margin-bottom: 33px;
+    margin: 0 0 33px;
     color: rgba(52, 61, 72, 0.8);
 }
 
@@ -1154,8 +1152,7 @@ summary::marker {
 
 .testimonial__slide {
     box-sizing: border-box;
-    margin: 0 auto;
-    margin-bottom: 10px;
+    margin: 0 auto 10px;
     padding: 30px;
     border: 1px solid rgb(242, 244, 247);
     display: none;
@@ -1163,8 +1160,7 @@ summary::marker {
 
 .testimonial__slides-headline {
     box-sizing: border-box;
-    margin: 0;
-    margin-bottom: 13px;
+    margin: 0 0 13px;
     font-size: 15px;
     color: rgb(52, 61, 72);
     font-weight: 700;
@@ -1173,8 +1169,7 @@ summary::marker {
 
 .testimonial__slides-text {
     box-sizing: border-box;
-    margin: 0;
-    margin-bottom: 30px;
+    margin: 0 0 30px;
     font-size: 16px;
     color: rgb(52, 61, 72);
     font-weight: 300;
@@ -1505,7 +1500,7 @@ summary::marker {
     margin: 10px 0;
 }
 
-.footer-nav__namber {
+.footer-nav__number {
     padding: 0;
     margin: 10px 0;
 }
@@ -1712,14 +1707,6 @@ summary::marker {
         color: var(--color-yellow);
     }
 
-    .top-menu__button-start {
-        cursor: pointer;
-    }
-
-    .top-menu__button-start:hover,
-    .top-menu__button-start:focus {
-        box-shadow: 0 8px 20px 3px rgba(237, 205, 55, 0.5);
-    }
 
     .top-menu__navigation--black {
         list-style: none;
@@ -1748,7 +1735,7 @@ summary::marker {
 /* media Intro */
 @media (min-width:760px) {
     .intro {
-        padding: 80px 0px 50px;
+        padding: 80px 0 50px;
     }
 
     .intro__wrapper {
@@ -1777,7 +1764,7 @@ summary::marker {
 
 @media (min-width:1200px) {
     .intro {
-        padding: 100px 0px 50px;
+        padding: 100px 0 50px;
     }
 
     .intro__wrapper {
@@ -1891,7 +1878,7 @@ summary::marker {
         height: 87px;
     }
 
-    .process__step-namber {
+    .process__step-number {
         width: 45px;
         height: 45px;
     }
@@ -1994,10 +1981,8 @@ summary::marker {
     .update__slides-button {
         box-sizing: border-box;
         width: 165px;
-        padding: 5px;
-        padding-bottom: 30px;
+        padding: 5px 5px 30px 5px;
         margin-right: 5px;
-        box-sizing: border-box;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -2216,7 +2201,7 @@ summary::marker {
 
     .our-users__button:hover,
     .our-users__button:focus {
-        box-shadow: 0px 8px 20px 3px rgba(237, 205, 55, 0.5);
+        box-shadow: 0 8px 20px 3px rgba(237, 205, 55, 0.5);
     }
 }
 
