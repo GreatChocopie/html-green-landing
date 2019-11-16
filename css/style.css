@@ -1210,8 +1210,8 @@ summary::marker {
 }
 
 .testimonial__slides-container {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     border: 0 none;
 }
 
@@ -1219,7 +1219,7 @@ summary::marker {
     display: flex;
     justify-content: center;
     margin-top: 15px;
-    order: 10;
+    /* order: 10; */
 }
 
 .testimonial__button {
