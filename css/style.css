@@ -733,6 +733,7 @@ summary::marker {
 
 .update__slides-container {
     width: 320px;
+    border:0 none;
 }
 
 .update__slides-list {
@@ -813,6 +814,9 @@ summary::marker {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.pricing__slides-container {
+    border: 0 none;
 }
 
 .pricing__header {
@@ -1206,15 +1210,16 @@ summary::marker {
 }
 
 .testimonial__slides-container {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
+    border: 0 none;
 }
 
 .testimonial__button-wrapper {
     display: flex;
     justify-content: center;
     margin-top: 15px;
-    order: 10;
+    /* order: 10; */
 }
 
 .testimonial__button {
