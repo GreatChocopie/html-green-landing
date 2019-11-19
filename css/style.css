@@ -1712,6 +1712,7 @@ summary::marker {
     flex-direction: row;
     justify-content: space-between;
     color: #000000;
+    margin-right: 5px;
   }
 
   .top-menu__navigation--black .top-menu__item-a {
