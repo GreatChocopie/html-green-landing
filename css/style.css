@@ -133,11 +133,13 @@ summary::marker {
 
 .top-menu__logo {
   flex-shrink: 0;
+  margin-right: 70px;
 }
 
 .top-menu__logo--black {
   display: none;
   flex-shrink: 0;
+  margin-right: 70px;
 }
 
 .nav-colored {
@@ -1669,7 +1671,6 @@ summary::marker {
     min-width: 580px;
     padding: 0;
     margin-bottom: 5px;
-    margin-left: 70px;
     display: flex;
     flex-direction: row;
     align-items: center;
