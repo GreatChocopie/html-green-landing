@@ -1560,7 +1560,7 @@ summary::marker {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+
     background-color: #FFFFFF;
     flex-grow: 1;
   }
@@ -1585,6 +1585,10 @@ summary::marker {
   .top-menu__item--button {
     font-family: inherit;
     font-weight: 500;
+  }
+
+  .top-menu__button-start {
+    margin-top: auto;
   }
 
   .top-menu__button-close {
@@ -1654,7 +1658,7 @@ summary::marker {
 @media (min-width: 1200px) {
   .top-menu {
     width: 1110px;
-    flex-wrap: wrap;
+
   }
 
   .top-menu__toggle {
@@ -1690,6 +1694,10 @@ summary::marker {
 
   .top-menu__item {
     align-self: baseline;
+  }
+
+  .top-menu__item:last-child {
+    margin-right: auto;
   }
 
   .top-menu__item-a--current {
