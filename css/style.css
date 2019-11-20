@@ -1953,7 +1953,12 @@ summary::marker {
 
   .features__item {
     width: 325px;
+
   }
+
+  /* .features__item:last-child {
+    margin-right: auto;
+  } */
 
   .features__subtitle {
     font-size: 24px;
@@ -1964,6 +1969,9 @@ summary::marker {
   .features__wrapper {
     width: 1180px;
   }
+
+
+
 
   .feature__advantage {
     font-size: 20px;
