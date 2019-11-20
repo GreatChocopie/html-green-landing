@@ -1358,6 +1358,7 @@ summary::marker {
   cursor: pointer;
   min-height: 46px;
   padding: 8px 15px;
+  margin-bottom: 5px;
   box-sizing: border-box;
   min-width: 150px;
   font-family: inherit;
@@ -1418,13 +1419,15 @@ summary::marker {
   width: 320px;
   padding-bottom: 30px;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .start-trial__button-join {
   cursor: pointer;
   min-height: 46px;
   padding: 8px 15px;
+  margin-bottom: 5px;
   box-sizing: border-box;
   min-width: 150px;
   font-family: inherit;
@@ -1446,6 +1449,7 @@ summary::marker {
   cursor: pointer;
   min-height: 46px;
   padding: 8px 15px;
+  margin-bottom: 5px;
   box-sizing: border-box;
   min-width: 150px;
   border: none;
