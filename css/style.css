@@ -763,6 +763,11 @@ summary::marker {
   fill: white;
 }
 
+.update__visual-image {
+  width: 320px;
+  height: 225px;
+}
+
 .update__slides {
   display: none;
 }
@@ -1184,6 +1189,8 @@ summary::marker {
   margin: 0;
   margin-right: 15px;
   border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
 
 .testimonial__slides-client-name {
@@ -1413,6 +1420,8 @@ summary::marker {
 .start-trail__img {
   box-sizing: border-box;
   margin: 0 58px;
+  width: 184px;
+  height: 63px;
 }
 
 .start-trial__buttons-block {
@@ -1777,6 +1786,11 @@ summary::marker {
     font-size: 14px;
     padding: 8px 30px;
   }
+
+  .intro__visual-image {
+    min-width: 640px;
+    min-height: 340px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1801,6 +1815,11 @@ summary::marker {
   .intro__button-trial:hover,
   .intro__button-trial:focus {
     box-shadow: 0 8px 20px 3px rgba(237, 205, 55, 0.5);
+  }
+
+  .intro__visual-image {
+    min-width: 1050px;
+    min-height: 558px;
   }
 
   /* .intro__button-video-text:hover {
@@ -2028,6 +2047,11 @@ summary::marker {
     display: none;
   }
 
+  .update__visual-image {
+    width: 690px;
+    height: 484px;
+  }
+
   #update-radio1:checked~.update__slides-wrapper .update__slides-budge {
     display: block;
   }
@@ -2066,6 +2090,11 @@ summary::marker {
     width: 230px;
     margin: 0;
     font-size: 18px;
+  }
+
+  .update__visual-image {
+    width: 1100px;
+    height: 772px;
   }
 
   .update__slides-button:hover,
