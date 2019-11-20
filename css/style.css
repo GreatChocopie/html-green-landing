@@ -479,6 +479,7 @@ summary::marker {
   align-self: flex-start;
   cursor: pointer;
   padding: 8px 22px;
+  margin-bottom: 5px;
   box-sizing: border-box;
   min-width: 150px;
   min-height: 46px;
@@ -1828,11 +1829,18 @@ summary::marker {
     width: 730px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .process__item {
-    width: 225px;
+    width: 215px;
     padding: 0 10px;
+    flex-grow: 0;
+
+  }
+
+  .process__item:last-child {
+    margin-right: auto;
   }
 
   .process__step-img {
@@ -1879,7 +1887,7 @@ summary::marker {
   }
 
   .process__item {
-    width: 400px;
+    width: 310px;
     padding: 0 40px;
   }
 
