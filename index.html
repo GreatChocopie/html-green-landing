@@ -104,8 +104,8 @@
                 </button>
             </div>
             <div class="intro__visual">
-                <img class="intro__visual-image" src="img/banner-image.png" width="270" height="160"
-                    alt="Big Screenshot">
+                <img class="intro__visual-image bounceInDown wow" data-wow-offset="200" data-wow-delay="0.2s"
+                    data-wow-duration="2s" src="img/banner-image.png" width="270" height="160" alt="Big Screenshot">
             </div>
         </div>
     </section>
@@ -155,9 +155,11 @@
             <div class="process__promo">
                 <!-- здесь выскакивающие картинки-анимация -->
                 <div class="process__visual">
-                    <img src="./img/dash-1.png" class="process__visual-image1" width="320" height="330"
+                    <img src="./img/dash-1.png" class="process__visual-image1 wow bounceInLeft wow"
+                        data-wow-offset="200" data-wow-delay="0.2s" data-wow-duration="2s" width="320" height="330"
                         alt="Big Screenshot dash">
-                    <img src="./img/quickies.png" class="process__visual-image2" width="215" height="185"
+                    <img src="./img/quickies.png" class="process__visual-image2 bounceInLeft wow" data-wow-offset="200"
+                        data-wow-delay="0.5s" data-wow-duration="2s" width="215" height="185"
                         alt="Big Screenshot quickies">
                 </div>
                 <div class="process__promo-text">
@@ -626,6 +628,10 @@
         </nav>
     </footer>
     <script src="js/scripts.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
