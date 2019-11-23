@@ -11,8 +11,15 @@
 * Страница соответствует всем спецификациям W3C [http://validator.w3.org/nu](http://validator.w3.org/nu)  
 * Адаптивная верстка для мобильных, планшетов и десктопа.  
 * Код проходит проверку валидаторами HTMLhint, CSSlint, JSlint  
+* Анимация с Animate.css и Wow.js
 * Удовлетворяет [критериям верстки HTML-Academy](https://github.com/GreatChocopie/html-green-landing/blob/master/criteries.md)  
 * Доступность страницы для людей с ограниченными возможностями в соответствии с [https://weblind.ru](https://weblind.ru)  
+* Прохождение аудита в Lighthouse 
+
+*Desktop*  
+<img width="547" alt="" src="https://github.com/GreatChocopie/html-green-landing/blob/master/img/lighthouse-desktop.png">  
+*Mobile*  
+<img width="490" alt="" src="https://github.com/GreatChocopie/html-green-landing/blob/master/img/lighthouse-moblie.png">  
 
 
 
