@@ -343,8 +343,8 @@ summary::marker {
 }
 
 .intro__visual-image {
-    min-width: 270px;
-    min-height: 160px;
+    width: 100%;
+    height: auto;
 }
 
 /* process */
@@ -748,6 +748,9 @@ summary::marker {
 .update__slides-container {
     width: 320px;
     border:0 none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .update__slides-list {
@@ -786,6 +789,9 @@ summary::marker {
 
 .update__slides {
     display: none;
+}
+.update__visual-image {
+    width: 100%;
 }
 
 #update-radio1:checked~.update__slides-wrapper .update__slides-budge {
@@ -831,6 +837,9 @@ summary::marker {
 }
 .pricing__slides-container {
     border: 0 none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .pricing__header {
@@ -1224,8 +1233,8 @@ summary::marker {
 }
 
 .testimonial__slides-container {
-    /* display: flex;
-    flex-direction: column; */
+    flex-direction: column;
+    justify-content: center;
     border: 0 none;
 }
 
@@ -2049,6 +2058,7 @@ summary::marker {
 @media (min-width:1200px) {
     .update__wrapper {
         width: 1180px;
+        
     }
 
     .update__slides-container {
